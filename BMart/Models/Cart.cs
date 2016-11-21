@@ -8,8 +8,8 @@ namespace BMart.Models
 {
     public class Cart
     {
-        public int cartID { get; set; }
         [Required]
+        public int cartID { get; set; }
         public int sessionID { get; set; }
 
 

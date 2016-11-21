@@ -8,6 +8,7 @@ namespace BMart.Models
 {
     public class PaymentOption
     {
+        [Required]
         public int paymentOptionID { get; set; }
         public string paymentType { get; set; }
         public string paymentApiKey { get; set; }

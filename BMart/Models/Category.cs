@@ -9,8 +9,9 @@ namespace BMart.Models
 {
     public class Category
     {
-        public int categoryID { get; set; }
         [Required]
+        public int categoryID { get; set; }
+        
         public string categoryName { get; set; }
     }
 }

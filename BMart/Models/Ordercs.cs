@@ -9,8 +9,9 @@ namespace BMart.Models
 {
     public class Ordercs
     {
-public int orderID { get; set; }
         [Required]
+        public int orderID { get; set; }
+        
         public string orderStatus { get; set; }
         
     }

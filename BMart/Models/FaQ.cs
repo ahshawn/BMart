@@ -8,8 +8,8 @@ namespace BMart.Models
 {
     public class FaQ
     {
-        public int faqID { get; set; }
         [Required]
+        public int faqID { get; set; }
         public string faqQuestion { get; set; }
         public string faqAnswer { get; set; }
 

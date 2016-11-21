@@ -8,8 +8,9 @@ namespace BMart.Models
 {
     public class OrderDetails
     {
-        public int orderDetails { get; set; }
         [Required]
+        public int orderDetails { get; set; }
+        
 
     }
 }

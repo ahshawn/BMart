@@ -9,8 +9,8 @@ namespace BMart.Models
 {
     public class Reviews
     {
-        public int reviewsID { get; set;}
         [Required]
+        public int reviewsID { get; set;}
         public string reviewDescription { get; set; }
         public string reviewRatings { get; set; }
         public DateTime reviewDate { get; set;}

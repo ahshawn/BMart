@@ -9,9 +9,11 @@ namespace BMart.Models
 {
     public class CartDetails
     {
-        public int cartDetails { get; set; }
         [Required]
+        public int cartDetails { get; set; }
+       
 
 
     }
+
 }
