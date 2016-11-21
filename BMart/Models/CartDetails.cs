@@ -10,9 +10,10 @@ namespace BMart.Models
     public class CartDetails
     {
         [Required]
-        public int cartDetails { get; set; }
-       
+        [Key]
+        public int Id { get; set; }
 
+        public Product Product { get; set; }
 
     }
 

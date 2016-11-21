@@ -9,9 +9,10 @@ namespace BMart.Models
     public class PaymentOption
     {
         [Required]
-        public int paymentOptionID { get; set; }
-        public string paymentType { get; set; }
-        public string paymentApiKey { get; set; }
-        public string paymentAvailable { get; set; }
+        [Key]
+        public int OptionId { get; set; }
+        public string Type { get; set; }
+        public string ApiKey { get; set; }
+        public string Available { get; set; }
     }
 }

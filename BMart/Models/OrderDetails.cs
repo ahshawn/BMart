@@ -9,7 +9,9 @@ namespace BMart.Models
     public class OrderDetails
     {
         [Required]
-        public int orderDetails { get; set; }
+        public int Id { get; set; }
+
+        public Product Product { get; set; }
         
 
     }

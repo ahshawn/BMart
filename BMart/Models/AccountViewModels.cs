@@ -50,7 +50,7 @@ namespace BMart.Models
     {
         [Required]
         [Display(Name = "Username")]
-        [EmailAddress]
+        [StringLength(16, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 4)]
         public string UserName { get; set; }
 
         [Required]

@@ -20,6 +20,14 @@ namespace BMart.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartDetails> CartDetails { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Faq> Faqs { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
+        public DbSet<PaymentOption> PaymentOptions { get; set; }
+        public DbSet<Reviews> Reviews { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

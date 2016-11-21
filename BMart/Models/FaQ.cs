@@ -6,12 +6,12 @@ using System.Web;
 
 namespace BMart.Models
 {
-    public class FaQ
+    public class Faq
     {
         [Required]
-        public int faqID { get; set; }
-        public string faqQuestion { get; set; }
-        public string faqAnswer { get; set; }
+        public int Id { get; set; }
+        public string Question { get; set; }
+        public string Answer { get; set; }
 
     }
 }

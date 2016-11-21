@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -10,10 +11,15 @@ namespace BMart.Models
     public class Reviews
     {
         [Required]
-        public int reviewsID { get; set;}
-        public string reviewDescription { get; set; }
-        public string reviewRatings { get; set; }
-        public DateTime reviewDate { get; set;}
+        [Key]
+        public int Id { get; set;}
+        public string Description { get; set; }
+        public string Ratings { get; set; }
+        public DateTime Date { get; set;}
+        public string UserId { get; set; }
+
+        [ForeignKey("UserId")]
+        public virtual ApplicationUser User { get; set; }
 
     }
 }

@@ -10,8 +10,8 @@ namespace BMart.Models
     public class Category
     {
         [Required]
-        public int categoryID { get; set; }
+        public int Id { get; set; }
         
-        public string categoryName { get; set; }
+        public string Name { get; set; }
     }
 }

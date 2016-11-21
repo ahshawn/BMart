@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Web;
 
@@ -11,11 +12,11 @@ namespace BMart.Models
     {
         [Required]
         public int Id { get; set; }
-      
-        public string productName { get; set; }
-        public string productDescription { get; set; }
-        public string productQuantity { get; set; }
-        
-
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Quantity { get; set; }
+        public double Cost { get; set; }
+        public Category Category { get; set; }
+        public Reviews Reviews { get; set; }
     }
 }
