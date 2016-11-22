@@ -37,5 +37,7 @@ namespace BMart.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BMart.Models.Product> Products { get; set; }
     }
 }

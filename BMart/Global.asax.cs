@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using BMart.Utilities;
 
 namespace BMart
 {
@@ -13,6 +14,7 @@ namespace BMart
     {
         protected void Application_Start()
         {
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new CorsHandler());
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

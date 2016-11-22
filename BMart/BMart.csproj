@@ -179,8 +179,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CalorieController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -188,8 +190,21 @@
     <Compile Include="Migrations\201611211904027_Initial.Designer.cs">
       <DependentUpon>201611211904027_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611220825159_SeedFruitsAndGrensCategories.cs" />
+    <Compile Include="Migrations\201611220825159_SeedFruitsAndGrensCategories.Designer.cs">
+      <DependentUpon>201611220825159_SeedFruitsAndGrensCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611220846055_RemovedRequiredFromModels.cs" />
+    <Compile Include="Migrations\201611220846055_RemovedRequiredFromModels.Designer.cs">
+      <DependentUpon>201611220846055_RemovedRequiredFromModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611220848293_ReAddRequiredInModels.cs" />
+    <Compile Include="Migrations\201611220848293_ReAddRequiredInModels.Designer.cs">
+      <DependentUpon>201611220848293_ReAddRequiredInModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BMartContext.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartDetails.cs" />
     <Compile Include="Models\Category.cs" />
@@ -203,6 +218,7 @@
     <Compile Include="Models\Reviews.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\CorsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-sandstone.css" />
@@ -263,6 +279,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Fruits\" />
+    <Folder Include="Content\Greens\" />
+    <Folder Include="Content\Proteins\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Calorie\" />
   </ItemGroup>
@@ -277,6 +296,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611211904027_Initial.resx">
       <DependentUpon>201611211904027_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611220825159_SeedFruitsAndGrensCategories.resx">
+      <DependentUpon>201611220825159_SeedFruitsAndGrensCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611220846055_RemovedRequiredFromModels.resx">
+      <DependentUpon>201611220846055_RemovedRequiredFromModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611220848293_ReAddRequiredInModels.resx">
+      <DependentUpon>201611220848293_ReAddRequiredInModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
