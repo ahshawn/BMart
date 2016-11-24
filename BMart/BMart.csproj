@@ -227,9 +227,15 @@
     <Compile Include="Utilities\CorsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Beef\beef.jpg" />
+    <Content Include="Content\Beef\beef2.jpg" />
     <Content Include="Content\bootstrap-sandstone.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Chicken\Chicken.jpg" />
+    <Content Include="Content\Chicken\chicken2.jpg" />
+    <Content Include="Content\Milk\milk.jpg" />
+    <Content Include="Content\Milk\milk2.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -287,7 +293,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\Fruits\" />
     <Folder Include="Content\Greens\" />
-    <Folder Include="Content\Proteins\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
