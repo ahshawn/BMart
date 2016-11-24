@@ -1,3 +1,5 @@
+using BMart.Models;
+
 namespace BMart.Migrations
 {
     using System;
@@ -40,18 +42,64 @@ namespace BMart.Migrations
 
         protected override void Seed(BMart.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            context.Products.AddOrUpdate(x => x.Id,
+                new Product()
+                {
+                    Id = 1,
+                    Name = "Red Apple",
+                    Description = "Great apple that is red, juicy and organic",
+                    Image =
+                        ReadFile("C:\\Code\\BMart\\BMart\\Content\\Fruits\\f1p.jpg"),
+                    Quantity = "100",
+                    Cost = 2.99D,
+                    CategoryId = 26
+                },
+                new Product()
+                {
+                    Id = 2,
+                    Name = "Granny Smith Apple",
+                    Description = "An awesome Granny Smith Apple",
+                    Image =
+                        ReadFile("C:\\Code\\BMart\\BMart\\Content\\Fruits\\f2p.jpg"),
+                    Quantity = "100",
+                    Cost = 3.20D,
+                    CategoryId = 26
+                },
+                new Product()
+                {
+                    Id = 3,
+                    Name = "Jackfruit",
+                    Description = "What can be better than Jackfruit?",
+                    Image =
+                        ReadFile("C:\\Code\\BMart\\BMart\\Content\\Fruits\\f3p.jpg"),
+                    Quantity = "100",
+                    Cost = 5.20D,
+                    CategoryId = 26
+                },
+                new Product()
+                {
+                    Id = 4,
+                    Name = "Kiwi",
+                    Description = "Yummy Kiwi",
+                    Image =
+                        ReadFile("C:\\Code\\BMart\\BMart\\Content\\Fruits\\f4p.jpg"),
+                    Quantity = "100",
+                    Cost = 2.20D,
+                    CategoryId = 26
+                },
+                new Product()
+                {
+                    Id = 5,
+                    Name = "Lemon",
+                    Description = "Make your foods taste even better",
+                    Image =
+                        ReadFile("C:\\Code\\BMart\\BMart\\Content\\Fruits\\f5p.jpg"),
+                    Quantity = "100",
+                    Cost = 3.20D,
+                    CategoryId = 26
+                }
+                );
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
 
 
         }

@@ -19,6 +19,8 @@ namespace BMart.Models
 
 
         public OrderDetails OrderDetails { get; set; }
+
+        public int OrderDetailsId { get; set; }
         public int PaymentOptionId { get; set; }
         [ForeignKey("PaymentOptionId")]
         public PaymentOption PaymentOption { get; set; }

@@ -208,9 +208,20 @@
     <Compile Include="Migrations\201611240432467_AddedImagesTable.Designer.cs">
       <DependentUpon>201611240432467_AddedImagesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611240834528_ChangeModelClass.cs" />
+    <Compile Include="Migrations\201611240834528_ChangeModelClass.Designer.cs">
+      <DependentUpon>201611240834528_ChangeModelClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611240836187_ChangeModelClass1.cs" />
+    <Compile Include="Migrations\201611240836187_ChangeModelClass1.Designer.cs">
+      <DependentUpon>201611240836187_ChangeModelClass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611240850453_AddedProductIdToReviews.cs" />
+    <Compile Include="Migrations\201611240850453_AddedProductIdToReviews.Designer.cs">
+      <DependentUpon>201611240850453_AddedProductIdToReviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BMartContext.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartDetails.cs" />
     <Compile Include="Models\Category.cs" />
@@ -234,8 +245,24 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Chicken\Chicken.jpg" />
     <Content Include="Content\Chicken\chicken2.jpg" />
+    <Content Include="Content\Fruits\f1p.jpg" />
+    <Content Include="Content\Fruits\f2p.jpg" />
+    <Content Include="Content\Fruits\f3p.jpg" />
+    <Content Include="Content\Fruits\f4p.jpg" />
+    <Content Include="Content\Fruits\f5p.jpg" />
+    <Content Include="Content\Greens\vp1.jpg" />
+    <Content Include="Content\Greens\vp2.jpg" />
+    <Content Include="Content\Greens\vp3.jpg" />
+    <Content Include="Content\Greens\vp4.jpg" />
+    <Content Include="Content\Greens\vp5.jpg" />
+    <Content Include="Content\Greens\vp6.jpg" />
     <Content Include="Content\Milk\milk.jpg" />
     <Content Include="Content\Milk\milk2.png" />
+    <Content Include="Content\Mushrooms\m1p.jpg" />
+    <Content Include="Content\Mushrooms\m2p.jpg" />
+    <Content Include="Content\Mushrooms\m3p.jpg" />
+    <Content Include="Content\Mushrooms\m4p.jpg" />
+    <Content Include="Content\Mushrooms\m5p.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -291,8 +318,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Fruits\" />
-    <Folder Include="Content\Greens\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
@@ -321,6 +346,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611240432467_AddedImagesTable.resx">
       <DependentUpon>201611240432467_AddedImagesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611240834528_ChangeModelClass.resx">
+      <DependentUpon>201611240834528_ChangeModelClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611240836187_ChangeModelClass1.resx">
+      <DependentUpon>201611240836187_ChangeModelClass1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611240850453_AddedProductIdToReviews.resx">
+      <DependentUpon>201611240850453_AddedProductIdToReviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -18,6 +18,7 @@ namespace BMart.Models
         public string Quantity { get; set; }
         public double Cost { get; set; }
         public Category Category { get; set; }
-        public Reviews Reviews { get; set; }
+
+        public int CategoryId { get; set; }
     }
 }

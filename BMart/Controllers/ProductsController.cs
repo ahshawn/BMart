@@ -10,14 +10,12 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using BMart.Models;
-using System.IO;
 
 namespace BMart.Controllers
 {
     public class ProductsController : ApiController
     {
-        private BMartContext db = new BMartContext();
-
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/Products
         public IQueryable<Product> GetProducts()
