@@ -17,9 +17,6 @@ namespace BMart.Models
 
         public string UserId { get; set; }
 
-        [ForeignKey("UserId")]
-        public virtual ApplicationUser User { get; set; }
-
         public int PaymentOptionId { get; set; }
         [ForeignKey("PaymentOptionId")]
         public PaymentOption PaymentOption { get; set; }

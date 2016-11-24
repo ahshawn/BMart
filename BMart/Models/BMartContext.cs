@@ -19,6 +19,6 @@ namespace BMart.Models
         {
         }
 
-        public System.Data.Entity.DbSet<BMart.Models.Category> Categories { get; set; }
+        public System.Data.Entity.DbSet<BMart.Models.Product> Products { get; set; }
     }
 }

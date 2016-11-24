@@ -18,8 +18,5 @@ namespace BMart.Models
         public DateTime Date { get; set;}
         public string UserId { get; set; }
 
-        [ForeignKey("UserId")]
-        public virtual ApplicationUser User { get; set; }
-
     }
 }

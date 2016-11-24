@@ -153,3 +153,5 @@ C:\Code\BMart\BMart\obj\Debug\BMart.csproj.GenerateResource.Cache
 C:\Code\BMart\BMart\obj\Debug\BMart.Migrations.SeedFruitsAndGrensCategories.resources
 C:\Code\BMart\BMart\obj\Debug\BMart.Migrations.RemovedRequiredFromModels.resources
 C:\Code\BMart\BMart\obj\Debug\BMart.Migrations.ReAddRequiredInModels.resources
+C:\Code\BMart\BMart\obj\Debug\BMart.Migrations.RemovedUserIdEntity.resources
+C:\Code\BMart\BMart\obj\Debug\BMart.Migrations.AddedImagesTable.resources

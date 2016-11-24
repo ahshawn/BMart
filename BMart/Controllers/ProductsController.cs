@@ -15,7 +15,7 @@ namespace BMart.Controllers
 {
     public class ProductsController : ApiController
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private BMartContext db = new BMartContext();
 
         // GET: api/Products
         public IQueryable<Product> GetProducts()

@@ -178,8 +178,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CalorieController.cs" />
-    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -201,6 +199,14 @@
     <Compile Include="Migrations\201611220848293_ReAddRequiredInModels.cs" />
     <Compile Include="Migrations\201611220848293_ReAddRequiredInModels.Designer.cs">
       <DependentUpon>201611220848293_ReAddRequiredInModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611240348199_RemovedUserIdEntity.cs" />
+    <Compile Include="Migrations\201611240348199_RemovedUserIdEntity.Designer.cs">
+      <DependentUpon>201611240348199_RemovedUserIdEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611240432467_AddedImagesTable.cs" />
+    <Compile Include="Migrations\201611240432467_AddedImagesTable.Designer.cs">
+      <DependentUpon>201611240432467_AddedImagesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -283,7 +289,6 @@
     <Folder Include="Content\Greens\" />
     <Folder Include="Content\Proteins\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Views\Calorie\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -305,6 +310,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611220848293_ReAddRequiredInModels.resx">
       <DependentUpon>201611220848293_ReAddRequiredInModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611240348199_RemovedUserIdEntity.resx">
+      <DependentUpon>201611240348199_RemovedUserIdEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611240432467_AddedImagesTable.resx">
+      <DependentUpon>201611240432467_AddedImagesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
