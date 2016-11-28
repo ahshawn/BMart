@@ -238,6 +238,10 @@
     <Compile Include="Utilities\CorsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-BMart-20161121024907.mdf" />
+    <Content Include="App_Data\aspnet-BMart-20161121024907_log.ldf">
+      <DependentUpon>aspnet-BMart-20161121024907.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Beef\beef.jpg" />
     <Content Include="Content\Beef\beef2.jpg" />
     <Content Include="Content\bootstrap-sandstone.css" />
@@ -269,6 +273,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\BMart20161125103130 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\BMart20161126125959 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Deploy2IIS.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -278,10 +285,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -317,7 +327,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
